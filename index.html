@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WebStudio main page">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio - Effective Solutions for Your Business!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-container">
             <nav class="navigation-wrap">
                 <a href="./index.html" class="logo link">Web<span class="header-studio-color">Studio</span></a>
@@ -37,7 +39,7 @@
                 </ul>
             </address>
         </div>
-    </header>
+    </header> -->
 
     <main>
         <section class="hero-section">
@@ -100,16 +102,22 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section we-doing-section">
             <div class="container">
                 <h2 class="we-doing-head">What are we doing</h2>
                 <ul class="list we-doing-list">
-                    <li class="we-doing-item"><img src="./images/what_we_are_doing_1.jpg" alt="Monitor with statistics"
-                            width="360" height="300">
+                    <li class="we-doing-item"><img
+                            srcset="./images/what_we_are_doing_1.jpg 1x, ./images/what_we_are_doing_1_2x.jpg 2x"
+                            src="./images/what_we_are_doing_1.jpg" alt="Monitor with statistics" width="360"
+                            height="300">
                     </li>
-                    <li class="we-doing-item"><img src="./images/what_we_are_doing_2.jpg"
-                            alt="Different pages of the sam app on a phone" width="360" height="300"></li>
-                    <li class="we-doing-item"><img src="./images/what_we_are_doing_3.jpg"
+                    <li class="we-doing-item"><img
+                            srcset="./images/what_we_are_doing_2.jpg 1x, ./images/what_we_are_doing_2_2x.jpg 2x"
+                            src="./images/what_we_are_doing_2.jpg" alt="Different pages of the sam app on a phone"
+                            width="360" height="300"></li>
+                    <li class="we-doing-item"><img
+                            srcset="./images/what_we_are_doing_3.jpg 1x, ./images/what_we_are_doing_3_2x.jpg 2x"
+                            src="./images/what_we_are_doing_3.jpg"
                             alt="Phone held on hand with page opened for most interesting places" width="360"
                             height="300">
                     </li>
@@ -122,7 +130,8 @@
                 <h2 class="our-team-head">Our Team</h2>
                 <ul class="list team-list">
                     <li class="our-team-item">
-                        <img src="./images/our_team_1.jpg" alt="Mark Guerrero's photo" width="264" height="260">
+                        <img srcset="./images/our_team_1.jpg 1x, ./images/our_team_1_x2.jpg 2x"
+                            src="./images/our_team_1.jpg" alt="Mark Guerrero's photo" width="264" height="260">
                         <div class="team-wrap">
                             <h3 class="our-team-subhead">Mark Guerrero</h3>
                             <p class="our-team-text">Product Designer</p>
@@ -159,7 +168,8 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/our_team_2.jpg" alt="Tom Ford's photo" width="264" height="260">
+                        <img srcset="./images/our_team_2.jpg 1x, ./images/our_team_2_x2.jpg 2x"
+                            src="./images/our_team_2.jpg" alt="Tom Ford's photo" width="264" height="260">
                         <div class="team-wrap">
                             <h3 class="our-team-subhead">Tom Ford</h3>
                             <p class="our-team-text">Frontend Developer</p>
@@ -196,7 +206,8 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/our_team_3.jpg" alt="Camila Garcia's photo" width="264" height="260">
+                        <img srcset="./images/our_team_3.jpg 1x, ./images/our_team_3_x2.jpg 2x"
+                            src="./images/our_team_3.jpg" alt="Camila Garcia's photo" width="264" height="260">
                         <div class="team-wrap">
                             <h3 class="our-team-subhead">Camila Garcia</h3>
                             <p class="our-team-text">Marketing</p>
@@ -233,7 +244,8 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/our_team_4.jpg" alt="Daniel Wilson's photo" width="264" height="260">
+                        <img srcset="./images/our_team_4.jpg 1x, ./images/our_team_4_x2.jpg 2x"
+                            src="./images/our_team_4.jpg" alt="Daniel Wilson's photo" width="264" height="260">
                         <div class="team-wrap">
                             <h3 class="our-team-subhead">Daniel Wilson</h3>
                             <p class="our-team-text">UI Designer</p>
@@ -335,7 +347,7 @@
                     &
                     growth solutions.</p>
             </div>
-            <div>
+            <div class="footer-social-wrap">
                 <p class="footer-social-text">Social media</p>
                 <ul class="list footer-social-list">
                     <li class="footer-social-item">
