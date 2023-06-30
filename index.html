@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="navigation-wrap">
                 <a href="./index.html" class="logo link">Web<span class="header-studio-color">Studio</span></a>
@@ -38,8 +38,68 @@
                     <li> <a href="tel:+110001111111" class="contact-link link">+11 (000) 111-11-11</a> </li>
                 </ul>
             </address>
+            <button type="button" class="open-mob-menu" data-menu-open>
+                <svg class="open-mob-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-mob-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden" data-menu>
+            <div>
+                <button type="button" class="close-mob-menu" data-menu-close>
+                    <svg class="close-mob-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <ul class="list mob-navigation-list">
+                    <li><a href="./index.html" class="mob-menu-link link current">Studio</a></li>
+                    <li><a href="./portfolio.html" class="mob-menu-link link">Portfolio</a></li>
+                    <li><a href="" class="mob-menu-link link">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <address class="mob-address">
+                    <ul class="list mob-address-list">
+                        <li> <a href="tel:+110001111111" class="mob-phone link">+11 (000) 111-11-11</a> </li>
+                        <li> <a href="mailto:info@devstudio.com" class="mob-email link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="our-contacts list">
+                        <li class="our-contact">
+                            <a href="" class="our-contact-link">
+                                <svg class="our-contact-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="our-contact">
+                            <a href="" class="our-contact-link">
+                                <svg class="our-contact-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="our-contact">
+                            <a href="" class="our-contact-link">
+                                <svg class="our-contact-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="our-contact">
+                            <a href="" class="our-contact-link">
+                                <svg class="our-contact-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </address>
+            </div>
+        </div>
+    </header>
 
     <main>
         <section class="hero-section">
@@ -462,6 +522,8 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 
 </body>
 
