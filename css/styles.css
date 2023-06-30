@@ -1233,7 +1233,7 @@ ul {
 
 /* -----------------Crossplatform integration---------------------*/
 
-@media (min-width:320px) {
+@media (min-width:428px) {
 
   @media (min-resolution: 192dpi) {
     .hero-section {
