@@ -316,6 +316,7 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  font-style: normal;
 }
 
 .mob-phone:focus,
@@ -1004,14 +1005,19 @@ ul {
 }
 
 .modal {
+  overflow: scroll;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 408px;
-  min-height: 584px;
+  width: 95%;
+  max-width: 420px;
+  height: 95%;
+  max-height: 650px;
+
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1119,10 +1125,13 @@ ul {
 
 .modal-comment-wrap {
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .modal-comment-field {
   width: 100%;
+  max-width: 372px;
+
   min-height: 120px;
   margin-bottom: 16px;
   padding: 8px 16px;
@@ -1233,7 +1242,7 @@ ul {
 
 /* -----------------Crossplatform integration---------------------*/
 
-@media (min-width:428px) {
+@media (max-width:768px) {
 
   @media (min-resolution: 192dpi) {
     .hero-section {
@@ -1374,7 +1383,9 @@ ul {
     min-height: 88px;
   }
 
-
+  .modal {
+    overflow: auto;
+  }
 }
 
 @media (min-width:1158px) {
